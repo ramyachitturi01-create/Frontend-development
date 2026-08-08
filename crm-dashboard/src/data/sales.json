@@ -1,0 +1,10 @@
+[
+  { "id": "ORD-1001", "date": "2026-07-01", "customer": "Acme Corp", "amount": 1200.0, "status": "Paid" },
+  { "id": "ORD-1002", "date": "2026-07-03", "customer": "Beta LLC", "amount": 340.5, "status": "Pending" },
+  { "id": "ORD-1003", "date": "2026-07-05", "customer": "Gamma Co", "amount": 89.99, "status": "Refunded" },
+  { "id": "ORD-1004", "date": "2026-07-06", "customer": "Delta Inc", "amount": 450.0, "status": "Paid" },
+  { "id": "ORD-1005", "date": "2026-07-07", "customer": "Epsilon Ltd", "amount": 299.99, "status": "Pending" },
+  { "id": "ORD-1006", "date": "2026-07-08", "customer": "Zeta PLC", "amount": 1200.0, "status": "Paid" },
+  { "id": "ORD-1007", "date": "2026-07-09", "customer": "Theta LLC", "amount": 599.99, "status": "Paid" },
+  { "id": "ORD-1008", "date": "2026-07-10", "customer": "Iota Co", "amount": 75.5, "status": "Pending" }
+]

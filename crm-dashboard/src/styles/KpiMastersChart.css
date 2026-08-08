@@ -1,0 +1,13 @@
+.kpi-masters-chart {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid rgba(230,225,238,0.7);
+}
+
+.kpi-masters-chart__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin-bottom: 12px;
+}

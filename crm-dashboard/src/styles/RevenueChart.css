@@ -1,0 +1,104 @@
+.revenue-chart {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(230, 225, 238, 0.7);
+  box-shadow: 0 18px 54px rgba(15, 23, 42, 0.08);
+}
+
+.revenue-chart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.revenue-chart__header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-strong);
+}
+
+.revenue-chart__header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  max-width: 360px;
+  line-height: 1.6;
+}
+
+.planning-panel {
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), #fff);
+  border-radius: 18px;
+  min-width: 200px;
+  border: 1px solid rgba(255, 135, 0, 0.16);
+  box-shadow: 0 18px 40px rgba(255, 136, 0, 0.12);
+}
+
+.planning-panel__title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f97316;
+  margin-bottom: 14px;
+}
+
+.planning-panel__rows {
+  display: grid;
+  gap: 12px;
+}
+
+.planning-panel__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+}
+
+.planning-panel__row span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.planning-panel__row strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.planning-panel__footer {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffbf4;
+  padding: 14px 16px;
+  border-radius: 16px;
+}
+
+.planning-panel__score {
+  font-size: 20px;
+  font-weight: 800;
+  color: #c2410c;
+}
+
+.planning-panel__label {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+@media (max-width: 940px) {
+  .revenue-chart__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+:root[data-theme="dark"] .planning-panel { background: var(--surface-strong); border-color: var(--border); }
+:root[data-theme="dark"] .planning-panel__row { background: var(--surface); }
+:root[data-theme="dark"] .planning-panel__row span, :root[data-theme="dark"] .planning-panel__label { color: var(--muted); }
+:root[data-theme="dark"] .planning-panel__row strong { color: var(--text-strong); }
+:root[data-theme="dark"] .planning-panel__footer { background: #2b251f; }

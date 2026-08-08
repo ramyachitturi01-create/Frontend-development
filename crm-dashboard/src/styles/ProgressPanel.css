@@ -1,0 +1,120 @@
+.progress-panel {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.12);
+}
+
+.progress-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-panel__header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-strong);
+}
+
+.progress-panel__body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.progress-chart {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+
+.progress-chart__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.progress-chart__center::before {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 3px 12px rgba(80, 53, 160, 0.12);
+  z-index: -1;
+}
+
+.progress-chart__center strong {
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text-strong);
+}
+
+.progress-chart__center span {
+  color: #5b21b6;
+  margin-top: 5px;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.progress-chart__center small {
+  display: block;
+  margin-top: 8px;
+  color: var(--accent-strong);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.progress-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progress-metrics__count {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-strong);
+}
+
+.progress-metrics__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--surface-strong);
+  border-radius: 14px;
+  border: 1px solid rgba(230,225,238,0.7);
+}
+
+.progress-metrics__row span {
+  color: var(--muted);
+}
+
+.progress-metrics__row strong {
+  color: var(--text-strong);
+}
+
+@media (max-width: 1020px) {
+  .progress-panel__body { grid-template-columns: 1fr; }
+  .progress-chart { margin: 0 auto; }
+}
+
+:root[data-theme="dark"] .progress-chart__center::before { background: var(--surface); }
+:root[data-theme="dark"] .progress-chart__center span { color: #c4b5fd; }

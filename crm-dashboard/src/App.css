@@ -1,0 +1,22 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial, sans-serif;
+}
+
+
+body{
+ background:#f7f7ff;
+}
+
+
+.layout{
+ display:flex;
+}
+
+
+.main{
+ flex:1;
+ padding:20px;
+}
