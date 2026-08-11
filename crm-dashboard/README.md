@@ -74,7 +74,3 @@ The objective of this project is to build a user-friendly CRM dashboard while pr
 - CSS styling
 - Vite development workflow
 - Git and GitHub version control
-
-👩‍💻 Author
-
-Ramya Chitturi
